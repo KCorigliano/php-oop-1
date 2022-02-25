@@ -1,9 +1,19 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+}
+
 .card{
-    margin: 25px;
-    margin-bottom: 50px;
+    width: calc(100% / 4);
+    margin: 25px 25px 50px 25px;
     background-color: dimgrey;
     padding: 15px;
     border-radius: 15px;
+    color: white;
 }
 
 h3 span{

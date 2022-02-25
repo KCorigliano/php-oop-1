@@ -61,7 +61,15 @@ $uncharted = new Movie([
     "publisher" => "Sony",
 ]);
 
-$movieArray=[$spiderman, $uncharted]
+$lotr = new Movie([
+    "title" => "Il signore degli anelli: La compagnia degli anelli",
+    "pubblicationDate" => "2001",
+    "duration" => "2.58",
+    "genre" => "Fantasy",
+    "publisher" => "New Line Cinema",
+]);
+
+$movieArray=[$spiderman, $uncharted, $lotr]
 
 
 ?>
@@ -76,18 +84,22 @@ $movieArray=[$spiderman, $uncharted]
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<?php foreach ($movieArray as $key) {
-    echo "
-    <div class=\"card\">
-        <h3>Titolo: <span>" . $key -> getTitle() . "</span></h2>
-        <h3>Anno di pubblicazione: <span>" . $key -> getPubl() . "</span></h2>
-        <h3>Durata: <span>" . $key -> getDur() . "</span></h2>
-        <h3>Generi: <span>" . $key -> getGenre() . "</span></h2>
-        <h3>Editore: <span>" . $key -> getPublisher() . "</span></h2>
+<div class="container">
+    <div class="row">
+        <?php foreach ($movieArray as $key) {
+            echo "
+            <div class=\"card\">
+                <h3>Titolo: <span>" . $key -> getTitle() . "</span></h2>
+                <h3>Anno di pubblicazione: <span>" . $key -> getPubl() . "</span></h2>
+                <h3>Durata: <span>" . $key -> getDur() . "</span></h2>
+                <h3>Generi: <span>" . $key -> getGenre() . "</span></h2>
+                <h3>Editore: <span>" . $key -> getPublisher() . "</span></h2>
+            </div>
+            ";
+        }
+        ?>
     </div>
-    ";
-}
-?>
+</div>
 </div>
 </body>
 </html>
