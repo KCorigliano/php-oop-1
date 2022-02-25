@@ -1,0 +1,12 @@
+.card{
+    margin: 25px;
+    margin-bottom: 50px;
+    background-color: dimgrey;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+h3 span{
+    font-weight: 400;
+    font-size: 18px;
+}
